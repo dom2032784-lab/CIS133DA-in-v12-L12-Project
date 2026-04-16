@@ -11,11 +11,13 @@
     <title>Accessibility</title>
     <meta charset="UTF-8">
     <meta name="author" content="Dominic Romero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <!-- Error: closed the h1 tag -->
         <h1>Accessibility</h1>
         <nav>
             <a href="#">Accessibility</a>
@@ -26,11 +28,14 @@
         <h2>Our Commitment to Accessibility</h2>
 
         <p>Our website is designed with accessibility in mind to ensure all users can interact with our content in a meaningful way. We aim to reduce barriers by providing clear navigation, readable content, and inclusive design features that support individuals with a wide range of abilities and assistive technologies.</p>
+        
         <!-- Error: corrected image path and added alt text-->
-        <img src="images/access-image.jpg" alt="Illustration of tiled diamond icons representing different types of dissabilities and accessibility support"
-
-        <h3>Web Users and Web Accessibility</h5>
+        <img src="images/access-image.jpg" alt="Illustration representing different types of disabilities and accessibility support">
+      
+        <!-- Error: corrected the close tag to h3-->
+        <h3>Web Users and Web Accessibility</h3>
             <table>
+                <caption>Overview of disabilities, barriers, and accessibility principles</caption>
                 <tr>
                     <th>Disability</th>
                      <th>Description</th>
@@ -71,51 +76,66 @@
         </table>
 
 
-            <h1>Survey</h1>
+            <h2>Survey</h2>
             <form name="myForm" id="test" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx"
                 method="post">
                 <p>We'd love to hear from you regarding the Accessibility of our website. If you'd like, please take
                     this brief survey and leave us your name and email address if you'd like us to get back in contact
                     with you.</p>
 
-                <h3>Feedback Type</h3>
-                <p>What type of feedback would you like to share? <em>Please select all that apply</em>:</p>
+                <fieldset>
+                    <legend>Feedback Type</legend>
+                    <p>What type of feedback would you like to share? <em>Please select all that apply</em>:</p>
 
-                <input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve Accessibility on the
-                website<br>
-                <input type="checkbox" name="Type" value="Issue"> Issue with the Accessibility of the website<br>
-                <input type="checkbox" name="Type" value="Comment"> Share a comment about how our Accessibility features
-                helped you or others<br>
+                    <label><input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve Accessibility on the website</label><br>
+                    <label><input type="checkbox" name="Type" value="Issue"> Issue with the Accessibility of the website</label><br>
+                    <label><input type="checkbox" name="Type" value="Comment"> Share a comment about how our Accessibility features helped you or others</label><br>
+                </fieldset>
 
-                <h3>Satisfaction</h3>
-                <p>How satisfied are you with the Accessibility features we provide?</p>
+                <fieldset>
+                    <legend>Satisfaction</legend>
+                    <p>How satisfied are you with the Accessibility features we provide?</p>
 
-                <input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied<br>
-                <input type="radio" name="Satisfaction" value="4"> 4<br>
-                <input type="radio" name="Satisfaction" value="3"> 3<br>
-                <input type="radio" name="Satisfaction" value="2"> 2<br>
-                <input type="radio" name="Satisfaction" value="1"> 1<br>
-                <input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied<br>
+                    <label><input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied</label><br>
+                    <label><input type="radio" name="Satisfaction" value="4"> 4</label><br>
+                    <label><input type="radio" name="Satisfaction" value="3"> 3</label><br>
+                    <label><input type="radio" name="Satisfaction" value="2"> 2</label><br>
+                    <label><input type="radio" name="Satisfaction" value="1"> 1</label><br>
+                    <label><input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied</label><br>
+                </fieldset>
 
-                <h3>Improvements</h3>
-                <p>Please enter any feedback you have to provide you with a better service:<br>
+                <fieldset>
+                    <legend>Improvements</legend>
+                    <label for="feedback">Please enter any feedback you have to provide you with a better service:</label><br>
+                    <textarea id="feedback" name="Feedback" rows="5" cols="60"></textarea>
+                </fieldset><br>
 
-                    <textarea name="Feedback" rows="5" cols="60"></textarea>
-                </p><br>
-
-                <h3>Contact Details (Optional)</h3>
-                Name: <input type="text" name="FirstName"><br>
-                Email Address: <input type="email" name="EmailAddress"><br>
+                <fieldset>
+                    <legend>Contact Details (Optional)</legend>
+                    <label for="firstName">Name:</label> <input type="text" id="firstName" name="FirstName"><br>
+                    <label for="emailAddress">Email Address:</label> <input type="email" id="emailAddress" name="EmailAddress"><br>
+                </fieldset>
 
                 <input type="submit" value="Submit">
 
             </form>
     </main>
     <footer>
-        <!- Citation for image used on the page ->
-            <p style="text-align:center;">Renma, Cris (2016). [Untitled photograph of different disabilities]. Retrieved
-                from <a href="https://pixabay.com/en/accessibility-disability-1682903/">Pixabay</a></p>
+        <!-- Error: corrected the comment syntax --> 
+        <!-- Citation for image used on the page -->
+            <p style="text-align:center;">Renma, Cris (2016). [Accessibility Image] Retrieved
+                from <a href="https://pixabay.com/en/accessibility-disability-1682903/">Pixabay</a>
+            </p>
+            <!-- Error: revised the image description -->
     </footer>
 </body>
 
 </html>
+<!-- WAVE Accessibility Evaluation Corrections:
+    1. Added alt text to the image 
+    2. Corrected the heading structure 
+    3. Corrected the font size and family in CSS for better readability
+    4. Added the form fieldsets, legends and proper labels 
+    5. Corrected the table headers and structure for better accessibility
+    6. Improved the contrast in CSS for better readability
+    -->

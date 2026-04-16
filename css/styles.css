@@ -3,18 +3,20 @@ Author: Dominic Romero
 Course: CIS133DA 17925
 Lesson: 12
 */
-
+/* Error: corrected the html comment syntax and added corrected properties */
 body {
-    bg-color: #eee;
-    font-family: Ariel, sans-serif;
-    font-size: 9px;
-    color: #7af0ff;
+    background-color: #eee; /* Error: corrected the color code */
+    font-family: Arial, sans-serif; /* Error: Ariel to Arial */
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
 }
-
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+/* Error: corrected missing brackets */
+header {
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
@@ -27,14 +29,20 @@ nav a {
     margin: 10px;
     padding: 2px;
     background-color: #FFFF00;
-    color: #9D85FF;
+    color: #000;
     text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+    outline: 2px solid #185f80;
+    text-decoration: underline;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Georgia, serif;
+    font-family: Arial, Georgia, serif;
 }
 
 img {
@@ -42,28 +50,29 @@ img {
     margin: auto;
     width: 300px;
 }
-
+/* Error: removed "&"*/
 table {
-    & width: 100%;
+    width: 100%;
 }
-
+/* Error: Seperated the properties for table, th, and td */
 table,
 th,
 td {
-    border: 1px solid #FFF;
-    background-color: #FFFF00 border-collapse: collapse;
+    border: 1px solid #000;
+    border-collapse: collapse;
     padding: 10px;
 }
 
 th {
     background-color: #185f80;
+    color: #FFF;
 }
-}
-
+/* Error: removed extra closing bracket */
 footer {
     width: 80%;
     margin: auto;
+    font-weight: bolder;
     text-align: center;
-    background-color: #185f80;
+    background-color: #7ccdf3;
     padding: 20px;
 }
