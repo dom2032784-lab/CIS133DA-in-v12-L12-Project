@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+ <!--
+        Course: CIS133DA
+        Section: 17925
+        Lesson: 12
+    -->
+   
+<html lang="en">
 
 <head>
-    <title></title>
+    <title>Accessibility</title>
     <meta charset="UTF-8">
-    <meta name="author" content="First Last">
+    <meta name="author" content="Dominic Romero">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Accessibility<h1>
+        <h1>Accessibility</h1>
         <nav>
             <a href="#">Accessibility</a>
         </nav>
@@ -19,54 +25,51 @@
     <main>
         <h2>Our Commitment to Accessibility</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus libero id fringilla porttitor. Mauris
-            lacinia lorem sit amet nisl dignissim vulputate. Donec ut feugiat libero. Integer scelerisque ex at ex
-            tempor, porta lacinia felis euismod. Mauris at aliquet velit. Sed eu nibh eu metus tristique porttitor
-            euismod quis felis. Proin ac purus elementum, condimentum odio eget, feugiat turpis. Duis dignissim eu est
-            rutrum accumsan. Fusce dapibus finibus arcu in pharetra. Sed tempor consequat placerat. Vivamus convallis
-            sapien eget eros hendrerit, eu lobortis justo rutrum. Suspendisse sit amet leo metus.</p>
-
-        <img src="access-image.jpg">
+        <p>Our website is designed with accessibility in mind to ensure all users can interact with our content in a meaningful way. We aim to reduce barriers by providing clear navigation, readable content, and inclusive design features that support individuals with a wide range of abilities and assistive technologies.</p>
+        <!-- Error: corrected image path and added alt text-->
+        <img src="images/access-image.jpg" alt="Illustration of tiled diamond icons representing different types of dissabilities and accessibility support"
 
         <h3>Web Users and Web Accessibility</h5>
             <table>
                 <tr>
                     <th>Disability</th>
-                    <th>Description</th>
-                    <td>Common Barriers</th>
-                    <th>Accessibility Principles to Apply</th>
-                </tr>
-                <tr>
-                    <td>Auditory</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Cognitive and Neurological</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Physical</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Speech</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Visual</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+                     <th>Description</th>
+                <!-- Error: changed td to th -->
+                <th>Common Barriers</th>
+                <th>Accessibility Principles to Apply</th>
+            </tr>
+            <tr>
+                <td>Auditory</td>
+                <td>Users who are deaf or hard of hearing may rely on visual content instead of audio.</td>
+                <td>Audio-only content, lack of captions, and missing transcripts limit access.</td>
+                <td><strong>Perceivable:</strong> Provide captions, transcripts, and visual alternatives for audio content.</td>
+            </tr>
+            <tr>
+                <td>Cognitive and Neurological</td>
+                <td>Includes users with learning disabilities, memory limitations, or attention-related challenges.</td>
+                <td>Complex navigation, unclear instructions, and overwhelming layouts can make content difficult to use.</td>
+                <td><strong>Understandable:</strong> Use clear language, consistent layouts, and simple instructions.</td>
+            </tr>
+            <tr>
+                <td>Physical</td>
+                <td>Users with limited mobility may rely on keyboards or assistive devices instead of a mouse.</td>
+                <td>Small clickable areas and lack of keyboard navigation create barriers.</td>
+                <td><strong>Operable:</strong> Ensure all features are accessible via keyboard and provide large clickable elements.</td>
+            </tr>
+            <tr>
+                <td>Speech</td>
+                <td>Users with speech disabilities may have difficulty using voice-based systems.</td>
+                <td>Websites that rely only on voice input or lack alternative input options limit usability.</td>
+                <td><strong>Operable:</strong> Provide multiple input methods beyond voice interaction.</td>
+            </tr>
+            <tr>
+                <td>Visual</td>
+                <td>Includes users who are blind, have low vision, or color blindness.</td>
+                <td>Poor contrast, missing alt text, and unreadable fonts make content inaccessible.</td>
+                <td><strong>Perceivable:</strong> Use high contrast, readable fonts, and descriptive alt text for images.</td>
+            </tr>
+        </table>
+
 
             <h1>Survey</h1>
             <form name="myForm" id="test" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx"
